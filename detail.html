@@ -51,8 +51,8 @@ dataLayer.push({
 
 <script>
 
-$("#cart_addtion").click(
-	window.dataLayer = window.dataLayer || [];
+$("#cart_addtion").click(function{
+	
 // Measure adding a product to a shopping cart by using an 'add' actionFieldObject
 // and a list of productFieldObjects.
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
@@ -84,7 +84,7 @@ dataLayer.push({
 	   ]
     }
   }
-});
+}); });
 </script>
 
 <!-- Google Tag Manager -->
@@ -346,7 +346,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </button>
                         </div>
                     </div>
-                    <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1" id = "cart addition"></i> Add To Cart</button>
+                    <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1" id = "cart_addition"></i> Add To Cart</button>
                 </div>
                 <div class="d-flex pt-2">
                     <p class="text-dark font-weight-medium mb-0 mr-2">Share on:</p>
