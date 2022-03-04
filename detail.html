@@ -51,11 +51,8 @@ dataLayer.push({
 
 <script>
 
-$("#cart_addtion").click(function{
-	
-// Measure adding a product to a shopping cart by using an 'add' actionFieldObject
-// and a list of productFieldObjects.
-dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+$("#cart_addtion").click(function(){
+  // Clear the previous ecommerce object.
 dataLayer.push({
   'event': 'addToCart',
   'ecommerce': {
